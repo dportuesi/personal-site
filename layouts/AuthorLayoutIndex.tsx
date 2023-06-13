@@ -26,24 +26,30 @@ export default function AuthorLayoutIndex({ children, content }: Props) {
             </span>
           </h1>
           <h2 className="text-lg text-gray-600 dark:text-gray-400">
-            {`Hey there 👋, Welcome to my blog & Portfolio - ${siteMetadata.description}.
+            {`Hey there! 👋 and welcome to my site - ${siteMetadata.description}!
             I am a `}
             {occupation}
             {` currently working at `}
-            <Link href="https://www.willowtreeapps.com">{company}</Link>
+            <Link className="underline decoration-blue-500" href="https://www.willowtreeapps.com">
+              {company}
+            </Link>
             {
-              ' and I care deeply about design, development, and implementation of Web and Mobile products.'
+              ' and I care deeply about design, development, and implementation of web and mobile products.'
             }
             <br />
             <br />
             {'Please check out my '}
-            <Link href="/projects">projects</Link>
+            <Link className="underline decoration-blue-500" href="/projects">
+              projects
+            </Link>
             {' and '}
-            <Link href="/blog">blogging.</Link>
+            <Link className="underline decoration-blue-500" href="/blog">
+              blogging.
+            </Link>
             <br />
             <br />
             {
-              'As always, I am available for hire to create the highquality website/app you deserve. Email me with the button below.'
+              'As always, I am available for hire to create the high-quality website or mobile you deserve. Email me with the button below.'
             }
           </h2>
         </div>
