@@ -60,6 +60,9 @@ const securityHeaders = [
 module.exports = withContentlayer(
   withBundleAnalyzer({
     reactStrictMode: true,
+    compiler: {
+      styledComponents: true,
+    },
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
       dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],

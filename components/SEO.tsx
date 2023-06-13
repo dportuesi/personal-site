@@ -3,6 +3,8 @@ import { useRouter } from 'next/router'
 import siteMetadata from '@/data/siteMetadata'
 import { CoreContent } from '@/lib/utils/contentlayer'
 import type { Blog, Authors } from 'contentlayer/generated'
+import Script from 'next/script'
+
 interface CommonSEOProps {
   title: string
   description: string
@@ -182,13 +184,14 @@ export const BlogSEO = ({
       <Head>
         {date && <meta property="article:published_time" content={publishedAt} />}
         {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData, null, 2),
-          }}
-        />
       </Head>
+      <Script
+        id="seoHtmlData"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData, null, 2),
+        }}
+      />
     </>
   )
 }

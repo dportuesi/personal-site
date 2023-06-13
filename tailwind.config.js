@@ -30,7 +30,7 @@ module.exports = {
       },
       fontFamily: {
         //@ts-ignore
-        primary: ['var(--outfit-font)', ...defaultTheme.fontFamily.sans],
+        sans: ['var(--font-outfit)', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: colors.sky,

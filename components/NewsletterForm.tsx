@@ -36,7 +36,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
 
   return (
     <div>
-      <div className="pb-1 text-lg font-semibold text-gray-800 w-72 dark:text-gray-100">
+      <div className="w-72 pb-1 text-lg font-semibold text-gray-800 dark:text-gray-100">
         {title}
       </div>
       <form className="flex flex-col" onSubmit={subscribe}>
@@ -46,7 +46,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
           </label>
           <input
             autoComplete="email"
-            className="px-4 rounded-md w-72 dark:bg-black focus:outline-none focus:ring-2 focus:border-transparent focus:ring-primary-600"
+            className="w-72 rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-black"
             id="email-input"
             name="email"
             placeholder={subscribed ? "You're subscribed !  🎉" : 'Enter your email'}
@@ -58,9 +58,9 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
         </div>
         <div className="mt-2 rounded-md shadow-sm">
           <button
-            className={`py-2 w-72 bg-primary-500 px-4 rounded-md font-medium text-white ${
+            className={`w-72 rounded-md bg-primary-500 px-4 py-2 font-medium text-white ${
               subscribed ? 'cursor-default' : 'hover:bg-primary-700 dark:hover:bg-primary-400'
-            } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 dark:ring-offset-black`}
+            } focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 dark:ring-offset-black`}
             type="submit"
             disabled={subscribed}
           >
@@ -68,7 +68,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
           </button>
         </div>
       </form>
-      {error && <div className="pt-2 text-sm text-red-500 w-72 dark:text-red-400">{message}</div>}
+      {error && <div className="w-72 pt-2 text-sm text-red-500 dark:text-red-400">{message}</div>}
     </div>
   )
 }

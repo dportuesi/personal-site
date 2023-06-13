@@ -1,13 +1,13 @@
 const siteMetadata = {
-  title: 'Personal Portfolio and Blog',
+  title: 'Engineering Portfolio & Blog',
   author: 'Domenic Portuesi',
-  description: 'Domenic Portuesi Personal Site & Blog',
+  description: 'Dom Portuesi Engineering',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://www.domenicportuesi.com',
+  siteRepo: 'https://github.com/dportuesi/personal-site',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/headshot.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'dportuesi@gmail.com',
   github: 'https://github.com/dportuesi',

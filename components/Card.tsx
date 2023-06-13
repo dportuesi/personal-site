@@ -1,7 +1,7 @@
 import Image from './Image'
 import Link from './Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, imgSrc, href, tools }) => (
   <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
     <div
       className={`${
@@ -43,6 +43,18 @@ const Card = ({ title, description, imgSrc, href }) => (
           )}
         </h2>
         <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+        <div className="mb-6 mt-4 flex flex-wrap items-center gap-3">
+          {tools.map((tool, index) => {
+            return (
+              <span
+                key={`${tool}-${index}`}
+                className="rounded-md bg-blue-500 px-2 py-1 text-base font-medium text-white shadow-lg shadow-blue-500/10"
+              >
+                {tool}
+              </span>
+            )
+          })}
+        </div>
         {href && (
           <Link
             href={href}
