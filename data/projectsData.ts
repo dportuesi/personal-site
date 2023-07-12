@@ -24,6 +24,13 @@ const projectsData = [
     href: 'https://www.t-mobile.com/',
     tools: ['Android', 'Kotlin', 'RoomDB', 'Kotlin Coroutines', 'Jetpack Compose', 'GraphQL'],
   },
+  {
+    title: 'League Ability Quiz',
+    description: `A serverless API written in Typescript that scrapes mobafire.com for abilities and returns a formatted JSON`,
+    imgSrc: '/static/images/league-api.png',
+    href: 'https://github.com/dportuesi/league-ability-quiz-api',
+    tools: ['Typescript', 'Serverless', 'AWS Lambda'],
+  },
 ]
 
 export default projectsData
