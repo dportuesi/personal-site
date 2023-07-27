@@ -17,11 +17,11 @@ const projectsData = [
     tools: ['Angular', 'Typescript', 'Flutter', 'Dart', 'Firebase', 'Android'],
   },
   {
-    title: 'T-Mobile Mobile Re-Design',
-    description: `A complete re-design and re-implementation of the T-Mobile app for Android. I led a team to implement features for a prospective
-    customer trialing or purchasing T-mobile cell service.`,
+    title: 'Big Telecom Mobile Re-Design',
+    description: `A complete re-design and re-implementation of the (Telecom) app for Android. I led a team to implement features for a prospective
+    customer trialing or purchasing the Telecom's cell service.`,
     imgSrc: '/static/images/tmo_combo_top.jpg',
-    href: 'https://www.t-mobile.com/',
+    href: '/',
     tools: ['Android', 'Kotlin', 'RoomDB', 'Kotlin Coroutines', 'Jetpack Compose', 'GraphQL'],
   },
   {
