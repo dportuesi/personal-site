@@ -17,6 +17,13 @@ const projectsData = [
     tools: ['Angular', 'Typescript', 'Flutter', 'Dart', 'Firebase', 'Android'],
   },
   {
+    title: 'Telus AI Data Collection',
+    description: `A fullstack web, backend, and mobile project to allow for sourcing and collecting of data for traing large language model AIs.`,
+    imgSrc: '/static/images/telus-ai.webp',
+    href: 'https://play.google.com/store/apps/details?id=com.telus.ai.collection&hl=en_US&gl=US',
+    tools: ['Android', 'Kotlin', 'React', 'Typescript'],
+  },
+  {
     title: 'Big Telecom Mobile Re-Design',
     description: `A complete re-design and re-implementation of the (Telecom) app for Android. I led a team to implement features for a prospective
     customer trialing or purchasing the Telecom's cell service.`,
