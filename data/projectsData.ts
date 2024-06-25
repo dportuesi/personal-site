@@ -17,6 +17,13 @@ const projectsData = [
     tools: ['Angular', 'Typescript', 'Flutter', 'Dart', 'Firebase', 'Android'],
   },
   {
+    title: 'Novara Rewards',
+    description: `A full no-code app building suite in native android and iOS.`,
+    imgSrc: '/static/images/novara.webp',
+    href: 'https://getnovara.com',
+    tools: ['Android', 'Kotlin', 'React', 'Typescript', 'Nextjs'],
+  },
+  {
     title: 'Telus AI Data Collection',
     description: `A fullstack web, backend, and mobile project to allow for sourcing and collecting of data for traing large language model AIs.`,
     imgSrc: '/static/images/telus-ai.webp',
