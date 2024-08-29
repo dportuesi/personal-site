@@ -31,6 +31,13 @@ const projectsData = [
     tools: ['Android', 'Kotlin', 'React', 'Typescript'],
   },
   {
+    title: 'Herff Jones EDesign Yearbook Designer',
+    description: `An interactive angular app built using FabricJS and HTML canvas to manipulate shapes and textboxes on a page for editing yearbooks.`,
+    imgSrc: '/static/images/herff.png',
+    href: 'https://www.herffjones.com/herff-jones-and-canva/',
+    tools: ['Angular', 'HTML Canvas', 'Typescript', 'FabricJS'],
+  },
+  {
     title: 'Big Telecom Mobile Re-Design',
     description: `A complete re-design and re-implementation of the (Telecom) app for Android. I led a team to implement features for a prospective
     customer trialing or purchasing the Telecom's cell service.`,
