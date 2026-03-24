@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:registry.npmjs.org)",
+      "Bash(rm -rf node_modules package-lock.json)",
+      "Bash(npm install:*)",
+      "Bash(npm view:*)",
+      "Bash(npm run:*)",
+      "Bash(npx next:*)",
+      "Bash(rm -f components/SEO.tsx components/LayoutWrapper.tsx components/NewsletterForm.tsx)",
+      "Bash(rm -rf scripts/generate-sitemap.mjs scripts/generate-rss.mjs)",
+      "Bash(grep -v \"^$\")",
+      "Bash(node -e \"console.log\\(JSON.parse\\(require\\(''fs''\\).readFileSync\\(''package.json'',''utf8''\\)\\).dependencies.next\\)\")"
+    ]
+  }
+}

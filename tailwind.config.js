@@ -10,7 +10,7 @@ module.exports = {
     optimizeUniversalDefaults: true,
   },
   content: [
-    './pages/**/*.tsx',
+    './app/**/*.tsx',
     './components/**/*.tsx',
     './layouts/**/*.tsx',
     './lib/**/*.ts',
