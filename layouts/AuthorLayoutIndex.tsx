@@ -12,6 +12,7 @@ interface Props {
   content: Omit<Authors, '_id' | '_raw' | 'body'>
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function AuthorLayoutIndex({ children, content }: Props) {
   const { name, occupation, company, email, linkedin, github, resume } = content
 

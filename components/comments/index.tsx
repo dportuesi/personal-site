@@ -1,3 +1,5 @@
+'use client'
+
 import siteMetadata from '@/data/siteMetadata'
 import dynamic from 'next/dynamic'
 import { CoreContent } from '@/lib/utils/contentlayer'

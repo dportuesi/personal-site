@@ -1,32 +1,22 @@
 import Link from '@/components/Link'
-import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
 import { sortedBlogPost, allCoreContent } from '@/lib/utils/contentlayer'
-import { InferGetStaticPropsType } from 'next'
-import { allBlogs } from 'contentlayer/generated'
+import { allBlogs, allAuthors } from 'contentlayer/generated'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { allAuthors } from 'contentlayer/generated'
 import RecentProjects from '@/components/RecentProjects'
 
 const MAX_POSTS_DISPLAY = 5
 const MAX_PROJECTS = 3
 const DEFAULT_LAYOUT = 'AuthorLayoutIndex'
 
-export const getStaticProps = async () => {
-  // TODO: move computation to get only the essential frontmatter to contentlayer.config
+export default function Home() {
   const sortedPosts = sortedBlogPost(allBlogs)
   const posts = allCoreContent(sortedPosts)
   const author = allAuthors.find((p) => p.slug === 'default')
 
-  return { props: { posts, author } }
-}
-
-export default function Home({ posts, author }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="stars-container divide-y divide-gray-200 animate-in fade-in duration-500 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <MDXLayoutRenderer layout={author.layout || DEFAULT_LAYOUT} content={author} />

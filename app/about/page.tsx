@@ -1,21 +1,20 @@
-import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { InferGetStaticPropsType } from 'next'
+import { genPageMetadata } from 'app/seo'
 import { allAuthors } from 'contentlayer/generated'
+import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import Image from 'next/image'
 
-const DEFAULT_LAYOUT = 'AuthorLayout'
+export const metadata = genPageMetadata({ title: 'About' })
 
-export const getStaticProps = async () => {
-  const author = allAuthors.find((p) => p.slug === 'default')
-  return { props: { author } }
-}
+const DEFAULT_LAYOUT = 'AuthorLayout'
 
 const authorImage1 = '/static/images/about1.jpg'
 const authorImage2 = '/static/images/about2.jpg'
 const authorImage3 = '/static/images/about3.jpg'
 const authorImage4 = '/static/images/about4.jpg'
 
-export default function About({ author }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function About() {
+  const author = allAuthors.find((p) => p.slug === 'default')
+
   return (
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
       <div className="animate-in fade-in duration-500">
@@ -32,7 +31,6 @@ export default function About({ author }: InferGetStaticPropsType<typeof getStat
             width={445}
             height={629}
           />
-
           <Image
             className="mx-auto mt-0 rounded-md shadow-xl duration-500 hover:-translate-y-2 sm:mt-20"
             src={authorImage2}
@@ -42,7 +40,6 @@ export default function About({ author }: InferGetStaticPropsType<typeof getStat
             width={445}
             height={629}
           />
-
           <Image
             className="mx-auto rounded-md shadow-xl duration-500 hover:-translate-y-2"
             src={authorImage3}

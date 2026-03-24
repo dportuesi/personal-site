@@ -1,8 +1,6 @@
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
-import { BlogSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
@@ -18,11 +16,10 @@ interface Props {
 }
 
 export default function PostLayout({ content, next, prev, children }: Props) {
-  const { slug, date, title } = content
+  const { date, title } = content
 
   return (
     <SectionContainer>
-      <BlogSEO url={`${siteMetadata.siteUrl}/blog/${slug}`} {...content} />
       <ScrollTopAndComment />
       <article>
         <div>
