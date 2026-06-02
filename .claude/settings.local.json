@@ -12,7 +12,9 @@
       "Bash(rm -f components/SEO.tsx components/LayoutWrapper.tsx components/NewsletterForm.tsx)",
       "Bash(rm -rf scripts/generate-sitemap.mjs scripts/generate-rss.mjs)",
       "Bash(grep -v \"^$\")",
-      "Bash(node -e \"console.log\\(JSON.parse\\(require\\(''fs''\\).readFileSync\\(''package.json'',''utf8''\\)\\).dependencies.next\\)\")"
+      "Bash(node -e \"console.log\\(JSON.parse\\(require\\(''fs''\\).readFileSync\\(''package.json'',''utf8''\\)\\).dependencies.next\\)\")",
+      "WebFetch(domain:revidi.app)",
+      "WebFetch(domain:branchapp.com)"
     ]
   }
 }

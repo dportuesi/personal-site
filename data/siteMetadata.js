@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Engineering Portfolio & Blog',
   author: 'Domenic Portuesi',
-  description: 'Dom Portuesi Engineering',
+  description: 'Professional Portfolio',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.domenicportuesi.com',

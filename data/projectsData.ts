@@ -1,5 +1,23 @@
 const projectsData = [
   {
+    title: 'Revidi',
+    description: `A Windows-only screen recording app I built solo from the ground up. Revidi keeps a rolling 60-second buffer of
+      your screen and audio powered by OBS under the hood, so you can hit a hotkey to instantly save the last minute of gameplay,
+      auto-upload the clip to the cloud, and drop a shareable link straight into Discord.`,
+    imgSrc: '/static/images/revidi.png',
+    href: 'https://revidi.app/',
+    tools: ['Electron', 'Typescript', 'React', 'OBS', 'Windows'],
+  },
+  {
+    title: 'Branch',
+    description: `A workforce payments platform offering on-demand pay, a free digital bank account and debit card, and tip
+      pooling for hourly and gig workers. I'm part of the Android team building features that help workers access their earnings
+      faster and give employers a flexible way to pay.`,
+    imgSrc: '/static/images/branch.webp',
+    href: 'https://branchapp.com/',
+    tools: ['Android', 'Kotlin', 'Jetpack Compose', 'Kotlin Coroutines'],
+  },
+  {
     title: 'Dairy Queen Mobile App',
     description: `We completely redesigned Dairy Queen's digital experience for them, including thier web app and native Android & iOS Apps. 
       I was responsable for implementing thier Android native app in Kotlin from start to finish.`,

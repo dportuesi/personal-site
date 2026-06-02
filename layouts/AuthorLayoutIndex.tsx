@@ -27,8 +27,9 @@ export default function AuthorLayoutIndex({ children, content }: Props) {
             </span>
           </h1>
           <h2 className="text-lg text-gray-600 dark:text-gray-400">
-            {`Hey there! 👋 and welcome to my site - ${siteMetadata.description}!
-            I am a `}
+            {`Hey there! 👋 and welcome to my ${siteMetadata.description}.`}
+            <br />
+            {`I am a `}
             {occupation}
             {` currently working at `}
             <Link className="underline decoration-blue-500" href="https://www.willowtreeapps.com">
